@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { navLinks } from "../constants";
+import SplitText from "./SplitText";
 
 const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -19,7 +20,18 @@ const NavBar = () => {
     <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
       <div className="inner">
         <a href="#hero" className="logo">
-          Oğuz Yücel
+          <SplitText
+            text="Oğuz Yücel"
+            delay={100}
+            duration={0.6}
+            ease="power3.out"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+            threshold={0.1}
+            rootMargin="-100px"
+            textAlign="center"
+          />
         </a>
 
         <nav className="desktop">
