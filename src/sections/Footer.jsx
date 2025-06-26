@@ -4,19 +4,19 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <div className="flex flex-col justify-center">
-          <p>Terms & Conditions</p>
+        <div className="flex flex-col justify-center md:items-start items-center">
+          <a href="/">Visit My Blog</a>
         </div>
         <div className="socials">
           {socialImgs.map((img) => (
-            <div key={index} className="icon">
-              <img src={socialImg.imgPath} alt="social icon" />
-            </div>
+            <a className="icon" target="_blank" href={img.url} key={img.url}>
+              <img src={img.imgPath} />
+            </a>
           ))}
         </div>
         <div className="flex flex-col justify-center">
           <p className="text-center md:text-end">
-            © {new Date().getFullYear()} Adrian Hajdin. All rights reserved.
+            © {new Date().getFullYear()} Oğuz Yücel. All rights reserved.
           </p>
         </div>
       </div>
