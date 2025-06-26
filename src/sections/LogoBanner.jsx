@@ -1,5 +1,3 @@
-import React from "react";
-import { div } from "three/tsl";
 import { logoIconsList } from "../constants";
 
 const LogoIcon = ({ icon }) => {
