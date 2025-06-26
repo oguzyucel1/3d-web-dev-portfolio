@@ -254,16 +254,19 @@ const socialImgs = [
     url: "https://www.instagram.com/oguzyuceell",
   },
   {
-    name: "fb",
-    imgPath: "/images/fb.png",
+    name: "github",
+    imgPath: "/images/github.svg",
+    url: "https://github.com/oguzyucel1",
   },
   {
     name: "x",
     imgPath: "/images/x.png",
+    url: "https://x.com/oguzyuceell",
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    url: "https://www.linkedin.com/in/mehmet-o%C4%9Fuz-y%C3%BCcel-463b7b2b4/",
   },
 ];
 
