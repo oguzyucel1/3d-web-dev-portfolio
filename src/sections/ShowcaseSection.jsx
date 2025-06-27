@@ -11,38 +11,42 @@ const ShowcaseSection = () => {
   const project2Ref = useRef(null);
   const project3Ref = useRef(null);
 
-  useGSAP(() => {
-    const projects = [
-      project1Ref.current,
-      project2Ref.current,
-      project3Ref.current,
-    ];
+  useGSAP(
+    () => {
+      const projects = [
+        project1Ref.current,
+        project2Ref.current,
+        project3Ref.current,
+      ];
 
-    projects.forEach((card, index) => {
+      projects.forEach((card, index) => {
+        if (!card) return;
+        gsap.fromTo(
+          card,
+          { y: 50, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 1,
+            delay: (index + 1) * 0.3,
+            scrollTrigger: {
+              trigger: card,
+              start: "top 80%",
+              toggleActions: "play none none none",
+              markers: false,
+            },
+          }
+        );
+      });
+
       gsap.fromTo(
-        card,
-        {
-          y: 50,
-          opacity: 0,
-        },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 1,
-          delay: (index + 1) * 0.3,
-          scrollTrigger: {
-            trigger: card,
-            start: "top bottom-=100",
-          },
-        }
+        sectionRef.current,
+        { opacity: 0 },
+        { opacity: 1, duration: 1.5 }
       );
-    });
-    gsap.fromTo(
-      sectionRef.current,
-      { opacity: 0 },
-      { opacity: 1, duration: 1.5 }
-    );
-  }, []);
+    },
+    { scope: sectionRef }
+  );
   return (
     <section id="work" ref={sectionRef} className="app-showcase">
       <div className="w-full">
