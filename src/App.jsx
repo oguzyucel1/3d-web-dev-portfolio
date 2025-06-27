@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 import LogoBanner from "./sections/LogoBanner.jsx";
 import NavBar from "./components/NavBar.jsx";
 import FeatureCards from "./sections/FeatureCards.jsx";
@@ -10,6 +13,14 @@ import Contact from "./sections/Contact.jsx";
 import Footer from "./sections/Footer.jsx";
 
 const App = () => {
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      ScrollTrigger.refresh(); // 🔁 tüm scroll trigger'ları güncelle
+    }, 500); // Sayfanın tamamı render olduktan sonra
+
+    return () => clearTimeout(timeout);
+  }, []);
+
   return (
     <>
       <NavBar />

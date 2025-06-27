@@ -99,7 +99,7 @@ const Contact = () => {
                 <button type="submit">
                   <div className="cta-button group">
                     <div className="bg-circle" />
-                    <p className="text">
+                    <p className="text font-bold">
                       {loading
                         ? "Sending..."
                         : success
