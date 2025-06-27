@@ -1,8 +1,6 @@
-import React from "react";
-import TitleHeader from "../components/TitleHeader";
 import { testimonials } from "../constants";
+import TitleHeader from "../components/TitleHeader";
 import GlowCard from "../components/GlowCard";
-import SplitText from "../components/SplitText";
 
 const Testimonials = () => {
   return (
@@ -10,18 +8,19 @@ const Testimonials = () => {
       <div className="w-full h-full md:px-10 px-5">
         <TitleHeader
           title="What People Say About Me?"
-          sub="⭐ Client Feedback Highlights"
+          sub="⭐️ Customer Feedback Highlights"
         />
+
         <div className="lg:columns-3 md:columns-2 columns-1 mt-16">
-          {testimonials.map(({ imgPath, name, mentions, review }) => (
-            <GlowCard card={{ review }}>
+          {testimonials.map((testimonial, index) => (
+            <GlowCard card={testimonial} key={index} index={index}>
               <div className="flex items-center gap-3">
                 <div>
-                  <img src={imgPath} alt={name} />
+                  <img src={testimonial.imgPath} alt="" />
                 </div>
                 <div>
-                  <p className="font-bold">{name}</p>
-                  <p className="text-white-50">{mentions}</p>
+                  <p className="font-bold">{testimonial.name}</p>
+                  <p className="text-white-50">{testimonial.mentions}</p>
                 </div>
               </div>
             </GlowCard>

@@ -30,7 +30,6 @@ const NavBar = () => {
             to={{ opacity: 1, y: 0 }}
             threshold={0.1}
             rootMargin="-100px"
-            textAlign="center"
           />
         </a>
 

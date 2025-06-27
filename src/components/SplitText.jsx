@@ -89,8 +89,10 @@ const SplitText = ({
     });
 
     return () => {
+      if (tl.scrollTrigger) {
+        tl.scrollTrigger.kill();
+      }
       tl.kill();
-      ScrollTrigger.getAll().forEach((t) => t.kill());
       gsap.killTweensOf(targets);
       splitter.revert();
     };
