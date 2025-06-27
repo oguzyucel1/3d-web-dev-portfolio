@@ -2,7 +2,6 @@ import { Environment, OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 
 import Computer from "./Computer";
-import { plane } from "three/examples/jsm/Addons.js";
 
 const ContactExperience = () => {
   return (
