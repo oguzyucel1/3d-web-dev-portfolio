@@ -23,7 +23,7 @@ This portfolio showcases development skills, projects, and contact information w
 
 <!-- Deployment / Tools -->
 <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" />
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+
 
 </div>
 
