@@ -89,32 +89,9 @@ const abilities = [
   },
 ];
 
-const techStackImgs = [
-  {
-    name: "React Developer",
-    imgPath: "/images/logos/react.png",
-  },
-  {
-    name: "Python Developer",
-    imgPath: "/images/logos/python.svg",
-  },
-  {
-    name: "Backend Developer",
-    imgPath: "/images/logos/node.png",
-  },
-  {
-    name: "Interactive Developer",
-    imgPath: "/images/logos/three.png",
-  },
-  {
-    name: "Project Manager",
-    imgPath: "/images/logos/git.svg",
-  },
-];
-
 const techStackIcons = [
   {
-    name: "React Developer",
+    name: "React & React Native Developer",
     modelPath: "/models/react_logo-transformed.glb",
     scale: 1,
     rotation: [0, 0, 0],
@@ -132,6 +109,24 @@ const techStackIcons = [
     rotation: [0, -Math.PI / 2, 0],
   },
   {
+    name: "DevOps Engineer",
+    modelPath: "/models/docker.glb",
+    scale: 8,
+    rotation: [0, 0, 0],
+  },
+  {
+    name: "AI Engineer",
+    modelPath: "/models/ai.glb",
+    scale: 1,
+    rotation: [0, 0, 0],
+  },
+  {
+    name: "TypeScript Developer",
+    modelPath: "/models/ts.glb",
+    scale: 1.5,
+    rotation: [0, 0, 0],
+  },
+  {
     name: "Interactive Developer",
     modelPath: "/models/three.js-transformed.glb",
     scale: 0.05,
@@ -143,20 +138,32 @@ const techStackIcons = [
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
   },
+  {
+    name: "Collaborative Developer",
+    modelPath: "/models/github.glb",
+    scale: 0.9,
+    rotation: [0, 0, 0],
+  },
+  {
+    name: "Tailwind CSS Developer",
+    modelPath: "/models/tailwind.glb",
+    scale: 1.5,
+    rotation: [0, 0, 0],
+  },
 ];
 
 const expCards = [
   {
     review:
-      "Oğuz brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
+      "Oğuz delivered high-quality results across various ML workflows, especially in data annotation and integrating models into applications. His analytical thinking and reliability made him a strong asset to the team.",
+    imgPath: "/images/arvis.png",
+    logoPath: "/images/arvislogo.png",
+    title: "AI Model & Mobile App Developer - Internship",
+    date: "July 2024 - September 2024",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Developed an AI-based vehicle damage detection system using a 15,000+ image dataset with refined, instance level annotations.",
+      "Trained and integrated CNN models into a Flutter app for real-time accident reporting and damage estimation.",
+      "Ranked 1st among 25+ project teams for innovation and technical execution.",
     ],
   },
   {
@@ -280,6 +287,5 @@ export {
   testimonials,
   socialImgs,
   techStackIcons,
-  techStackImgs,
   navLinks,
 };

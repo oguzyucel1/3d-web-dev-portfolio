@@ -1,13 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
 @import "tailwindcss";
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --gradient: radial-gradient(circle, #e5e5e5 0%, #fff 100%);
 }
 
 html,
 body {
-  width: 100dvw;
+  width: 100%;
+  max-width: 100vw;
   overflow-x: hidden;
   background-color: black;
   color: white;
@@ -16,7 +21,8 @@ body {
 }
 
 section {
-  width: 100dvw;
+  width: 100%;
+  max-width: 100vw;
 }
 
 @theme {
@@ -372,7 +378,7 @@ section {
     #62e0ff 25%,
     #52aeff 37.51%,
     #fd5c79 62.83%,
-    #6d45ce 92.91%
+    #bd8e0e 92.91%
   );
 }
 
@@ -396,7 +402,8 @@ section {
 
 /* marquee */
 .marquee {
-  width: 100dvw;
+  width: 100%;
+  max-width: 100vw;
   overflow: hidden;
   position: relative;
 }

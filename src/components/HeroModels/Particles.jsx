@@ -3,6 +3,7 @@ import { useFrame } from "@react-three/fiber";
 
 const Particles = ({ count = 200 }) => {
   const mesh = useRef();
+  const frameCount = useRef(0);
 
   const particles = useMemo(() => {
     const temp = [];
@@ -19,7 +20,13 @@ const Particles = ({ count = 200 }) => {
     return temp;
   }, [count]);
 
+  // Performans için frame atlamayı ekliyoruz
   useFrame(() => {
+    frameCount.current++;
+
+    // Her 2 frame'de bir güncelle (30fps yerine 15fps)
+    if (frameCount.current % 2 !== 0) return;
+
     const positions = mesh.current.geometry.attributes.position.array;
     for (let i = 0; i < count; i++) {
       let y = positions[i * 3 + 1];

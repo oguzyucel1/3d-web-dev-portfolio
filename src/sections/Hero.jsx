@@ -51,8 +51,7 @@ const Hero = () => {
             </div>
 
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Hi, I’m Oğuz, a developer based in Croatia with a passion for
-              code.
+              Hi, I’m Oğuz, a developer based in Turkey with a passion for code.
             </p>
 
             <Button
@@ -63,7 +62,7 @@ const Hero = () => {
           </div>
         </header>
 
-        {/* RIGHT: 3D Model or Visual */}
+        {/* RIGHT: 3D Model */}
         <figure>
           <div className="hero-3d-layout">
             <HeroExperience />
