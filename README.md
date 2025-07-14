@@ -1,7 +1,7 @@
 # 🚀 3D Web Developer Portfolio
 
 <div align="center">
-  <img src="public/images/readme.png" alt="Portfolio Preview" width="800" />
+
   
   [![React](https://img.shields.io/badge/React-19.0.0-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
   [![Three.js](https://img.shields.io/badge/Three.js-0.174.0-000000?style=for-the-badge&logo=three.js&logoColor=white)](https://threejs.org/)
@@ -9,15 +9,6 @@
   [![TailwindCSS](https://img.shields.io/badge/Tailwind-4.0.14-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
   [![GSAP](https://img.shields.io/badge/GSAP-3.12.7-88CE02?style=for-the-badge&logo=greensock&logoColor=white)](https://greensock.com/)
 
-  <p align="center">
-    A modern, interactive 3D portfolio built with cutting-edge web technologies
-    <br />
-    <a href="#demo"><strong>🌐 Live Demo</strong></a>
-    ·
-    <a href="#features"><strong>✨ Features</strong></a>
-    ·
-    <a href="#installation"><strong>⚡ Quick Start</strong></a>
-  </p>
 </div>
 
 ---
@@ -78,7 +69,7 @@ This portfolio showcases modern web development skills through an immersive 3D e
 | Frontend                                                                                            | 3D Graphics                                                                                               | Animation                                                                                            | Styling                                                                                                                      | Tools                                                                                                  |
 | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) | ![Three.js](https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white) | ![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white) | ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) | ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white) |
-| React 19                                                                                            | Three.js                                                                                                  | GSAP 3.12                                                                                            | Tailwind 4.0                                                                                                                 | Vite                                                                                                   |
+
 
 </div>
 
@@ -87,7 +78,7 @@ This portfolio showcases modern web development skills through an immersive 3D e
 ## 🎨 Screenshots
 
 <div align="center">
-  <img src="public/images/readme-bottom.png" alt="Portfolio Sections" width="100%" />
+  <img src="public/images/screenshot.png" alt="Portfolio Sections" width="100%" />
 </div>
 
 ---
