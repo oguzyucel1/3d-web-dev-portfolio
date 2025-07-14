@@ -21,24 +21,46 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true); // Show loading state
-    setSuccess(false); // Reset success state
+    setLoading(true);
+    setSuccess(false);
+
+    // Debug: Check environment variables
+    console.log("Environment check:", {
+      serviceId: import.meta.env.VITE_APP_EMAILJS_SERVICE_ID
+        ? "✅ Found"
+        : "❌ Missing",
+      templateId: import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID
+        ? "✅ Found"
+        : "❌ Missing",
+      publicKey: import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        ? "✅ Found"
+        : "❌ Missing",
+    });
+
+    // Check if all required fields are filled
+    if (!form.name || !form.email || !form.message) {
+      alert("Please fill in all fields");
+      setLoading(false);
+      return;
+    }
 
     try {
-      await emailjs.sendForm(
+      const result = await emailjs.sendForm(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         formRef.current,
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       );
 
-      // Reset form and stop loading
+      console.log("Email sent successfully:", result);
       setForm({ name: "", email: "", message: "" });
       setSuccess(true);
+      alert("Message sent successfully! ✅");
     } catch (error) {
-      console.error("EmailJS Error:", error); // Optional: show toast
+      console.error("EmailJS Error:", error);
+      alert(`Failed to send message: ${error.message || error}`);
     } finally {
-      setLoading(false); // Always stop loading, even on error
+      setLoading(false);
     }
   };
 
@@ -65,7 +87,7 @@ const Contact = () => {
                     name="name"
                     value={form.name}
                     onChange={handleChange}
-                    placeholder="What’s your good name?"
+                    placeholder="What’s your name?"
                     required
                   />
                 </div>
