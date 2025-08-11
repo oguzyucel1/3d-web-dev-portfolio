@@ -161,7 +161,7 @@ const expCards = [
     title: "AI Model & Mobile App Developer - Internship",
     date: "July 2024 - September 2024",
     responsibilities: [
-      "Developed an AI-based vehicle damage detection system using a 15,000+ image dataset with refined, instance level annotations.",
+      "Developed an AI-based vehicle damage detection system using a 20,000+ image dataset with refined, instance level annotations.",
       "Trained and integrated CNN models into a Flutter app for real-time accident reporting and damage estimation.",
       "Ranked 1st among 25+ project teams for innovation and technical execution.",
     ],
