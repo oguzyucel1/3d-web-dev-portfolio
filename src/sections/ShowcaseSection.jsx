@@ -49,7 +49,13 @@ const AppShowcase = () => {
         <div className="showcaselayout">
           <div ref={rydeRef} className="first-project-wrapper">
             <div className="image-wrapper">
-              <img src="/images/kampus.png" alt="Kampus Bot" />
+              <a
+                href="https://github.com/oguzyucel1/izu-kampus-bot"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="/images/kampus.png" alt="Kampus Bot" />
+              </a>
             </div>
             <div className="text-content">
               <h2>IZU Kampus Tracker Bot Automation</h2>
@@ -64,19 +70,30 @@ const AppShowcase = () => {
           <div className="project-list-wrapper overflow-hidden">
             <div className="project" ref={libraryRef}>
               <div className="image-wrapper bg-[#FFEFDB]">
-                <img
-                  src="/images/project2.png"
-                  alt="Library Management Platform"
-                />
+                <a
+                  href="https://github.com/AOghuz/EyeCareAIProject"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="/images/site1-front.png" alt="EyeCare AI" />
+                </a>
               </div>
-              <h2>The Library Management Platform</h2>
+              <h2>
+                Eye Hospital Management System with AI Powered Disease Diagnosis
+              </h2>
             </div>
 
             <div className="project" ref={ycDirectoryRef}>
               <div className="image-wrapper bg-[#FFE7EB]">
-                <img src="/images/project3.png" alt="YC Directory App" />
+                <a
+                  href="https://github.com/oguzyucel1/staff-records-app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="/images/staff1.png" alt="Staff Records App" />
+                </a>
               </div>
-              <h2>YC Directory - A Startup Showcase App</h2>
+              <h2>QR Based Employee Management System</h2>
             </div>
           </div>
         </div>
