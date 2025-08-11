@@ -75,7 +75,7 @@ const AppShowcase = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src="/images/site1-front.png" alt="EyeCare AI" />
+                  <img src="/images/eyecare.png" alt="EyeCare AI" />
                 </a>
               </div>
               <h2>
@@ -84,13 +84,13 @@ const AppShowcase = () => {
             </div>
 
             <div className="project" ref={ycDirectoryRef}>
-              <div className="image-wrapper bg-[#FFE7EB]">
+              <div className="image-wrapper bg-[#e3d0ef]">
                 <a
                   href="https://github.com/oguzyucel1/staff-records-app"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src="/images/staff1.png" alt="Staff Records App" />
+                  <img src="/images/staff-left.png" alt="Staff Records App" />
                 </a>
               </div>
               <h2>QR Based Employee Management System</h2>
